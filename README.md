@@ -18,5 +18,6 @@ And below is the sample POST request:-
 	"available" : "NO"
 }
 
-
+Below is the url for getting hotel details with id as filter in the url:-
+http://djangorestapi-env-1.eba-gnnu5cev.us-east-2.elasticbeanstalk.com/app/hotel_list/1
 
