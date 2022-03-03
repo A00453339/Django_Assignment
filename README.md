@@ -6,18 +6,20 @@ name (string)
 price (float)
 available (string)
 
-It is deployed on AWS elastic beanstalk. Below is the home url for the application:-
-http://djangorestapi-env-1.eba-gnnu5cev.us-east-2.elasticbeanstalk.com/app/home/
+1) Below is the home page for the app which prints "Hello Canada"
+http://127.0.0.1:8000/app/home/
 
-Following are the urls for GET and POST requests:-
-http://djangorestapi-env-1.eba-gnnu5cev.us-east-2.elasticbeanstalk.com/app/hotel_list/ 
-And below is the sample POST request:-
+2) Below is the GET request url to fetch all the hotels from backend database
+http://127.0.0.1:8000/app/hotel_list/
+
+3)Below is the sample POST request and url is same as GET request:-
 {
 	"name" : "MARRIOT",
 	"price" : 270.00,
 	"available" : "NO"
 }
+This will create entry for this hotel in the backend table, which can then be viewed using GET request
 
-Below is the url for getting hotel details with id as filter in the url:-
-http://djangorestapi-env-1.eba-gnnu5cev.us-east-2.elasticbeanstalk.com/app/hotel_list/1
+4) Below is the url for GET request with 'id' as a url parameter
+5) http://127.0.0.1:8000/app/hotel_list/1
 
